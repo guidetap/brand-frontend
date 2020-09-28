@@ -18,8 +18,9 @@ function App() {
         <Home />
       </div>
       <FeatureSections />
-      <CTASection />
       <LogoClouds />
+      <CTASection />
+
       <Footer />
     </>
   );
