@@ -5,6 +5,7 @@ import Home from './components/Home';
 import LogoClouds from './components/LogoClouds';
 import FeatureSections from './components/FeatureSections';
 import PricePlan from './components/PricePlan';
+import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 
 import logo from './logo.png';
@@ -13,10 +14,12 @@ function App() {
   return (
     <>
       <Header />
-      <Home />
+      <div className="max-w-7xl7 mx-auto">
+        <Home />
+      </div>
       <FeatureSections />
+      <CTASection />
       <LogoClouds />
-      <PricePlan />
       <Footer />
     </>
   );
