@@ -1,27 +1,12 @@
 import React from 'react';
-
-import Header from 'components/Header';
-import Home from 'components/Home';
-import LogoClouds from 'components/LogoClouds';
-import FeatureSections from 'components/FeatureSections';
-import CTASection from 'components/CTASection';
-import Footer from 'components/Footer';
-
-import logo from 'logo.png';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes';
 
 function App() {
   return (
-    <>
-      <Header />
-      <div className="max-w-7xl7 mx-auto">
-        <Home />
-      </div>
-      <FeatureSections />
-      <LogoClouds />
-      <CTASection />
-
-      <Footer />
-    </>
+    <Router>
+      <Routes />
+    </Router>
   );
 }
 
