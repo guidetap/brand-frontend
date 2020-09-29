@@ -1,13 +1,10 @@
 import React from 'react';
-import { CardElement } from '@stripe/react-stripe-js';
-import './style.css';
 
 function CardSection() {
 //   return <CardElement />;
   return (
     <div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium leading-5 text-gray-700">Email</label>
         <div className="mt-1 relative rounded-md shadow-sm">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <svg className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
@@ -15,12 +12,11 @@ function CardSection() {
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
           </div>
-          <input id="email" className="form-input block w-full pl-10 sm:text-sm sm:leading-5" placeholder="you@example.com" />
+          <input id="email" className="form-input block w-full pl-10 sm:text-sm sm:leading-5" placeholder="Email" />
         </div>
       </div>
-      <div>
+      <div className="mt-5">
         <fieldset>
-          <legend className="block text-sm font-medium leading-5 text-gray-700">Card Details</legend>
           <div className="mt-1 bg-white rounded-md shadow-sm">
             <div>
               <input aria-label="Card number" className="form-input relative block w-full rounded-none rounded-t-md bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" placeholder="Card number" />
